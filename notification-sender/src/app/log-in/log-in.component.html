@@ -1,0 +1,19 @@
+<h2> enter the details to login</h2>
+
+
+<div>
+</div>
+<div>
+  <label for ="email" required="true"> User Email : </label>
+  <input id = "email" [(ngModel)]="user.email" placeholder="email">
+  <br>
+  <label for ="password" required="true"> User Password : </label>
+  <input id = "password" [(ngModel)]="user.password" placeholder="password">
+  <br>
+  <button (click)="onSubmit()">Submit</button>
+</div>
+<nav>
+  <p>Already a user ? </p>
+  <a routerLink="/login"> Click To LogIn</a>
+
+</nav>

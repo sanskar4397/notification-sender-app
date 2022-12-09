@@ -1,0 +1,23 @@
+<h2> enter the details to signup</h2>
+
+
+<div>
+<p> Welcome {{user.name }} </p>
+</div>
+<div>
+  <label for ="name"> User Name : </label>
+  <input id ="name" required [(ngModel)]="user.name" placeholder="name">
+  <br>
+  <label for ="email" required="true"> User Email : </label>
+  <input id = "email" [(ngModel)]="user.email" placeholder="email">
+  <br>
+  <label for ="password" required="true"> User Password : </label>
+  <input id = "password" [(ngModel)]="user.password" placeholder="password">
+  <br>
+  <button (click)="onSubmit()">Submit</button>
+</div>
+<nav>
+  <p>Already a user ? </p>
+  <a routerLink="/login"> Click To LogIn</a>
+
+</nav>

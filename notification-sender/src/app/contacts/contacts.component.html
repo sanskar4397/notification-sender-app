@@ -1,0 +1,21 @@
+
+<div>
+  <button (click)="addContact()">
+    Add New Contact
+  </button>
+</div>
+
+<div>
+  <table class="style" style="width: 100%;">
+    <tr>
+      <th class="style" *ngFor="let property of contactProperties">
+        {{property.label}}
+      </th>
+    </tr>
+    <tr class="style" *ngFor="let contact of contacts">
+      <td>{{contact.name}}</td>
+      <td>{{contact.email}}</td>
+      <td>{{contact.phone}}</td>
+    </tr>
+  </table>
+</div>
